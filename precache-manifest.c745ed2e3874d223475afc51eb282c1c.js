@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f2a3583d63416617f5be6b241606fb5",
+    "revision": "701d5dfaf56f18e575df131cd2b4f595",
     "url": "/black-hole-viewer/index.html"
   },
   {
-    "revision": "3b83560235941086c9e2",
+    "revision": "adfe0b154f8d7b3801b7",
     "url": "/black-hole-viewer/static/css/main.8e43f6a1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/black-hole-viewer/static/js/2.e9d027c9.chunk.js.LICENSE"
   },
   {
-    "revision": "3b83560235941086c9e2",
-    "url": "/black-hole-viewer/static/js/main.f005078d.chunk.js"
+    "revision": "adfe0b154f8d7b3801b7",
+    "url": "/black-hole-viewer/static/js/main.06f24ec1.chunk.js"
   },
   {
     "revision": "a9c2c7b3d8b7c2d881db",
