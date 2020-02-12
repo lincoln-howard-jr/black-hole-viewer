@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,mBACE,UACF,CAEA,MACE,WACF,CAEA,gBACE,oBAAoB,CACpB,kBACF,CAEA,aACE,SACF","file":"main.c59f56bd.chunk.css","sourcesContent":["div.ui.label.label {\n  width: 54px;\n}\n\ninput {\n  width: 100px;\n}\n\n#grid-container {\n  width:100%!important;\n  margin:0px!important;\n}\n\n.range-input {\n  width: 5ch;\n}"]}
