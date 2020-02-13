@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/black-hole-viewer/static/css/main.c59f56bd.chunk.css",
-    "main.js": "/black-hole-viewer/static/js/main.cda3c918.chunk.js",
-    "main.js.map": "/black-hole-viewer/static/js/main.cda3c918.chunk.js.map",
+    "main.js": "/black-hole-viewer/static/js/main.b5288186.chunk.js",
+    "main.js.map": "/black-hole-viewer/static/js/main.b5288186.chunk.js.map",
     "runtime-main.js": "/black-hole-viewer/static/js/runtime-main.909e72ea.js",
     "runtime-main.js.map": "/black-hole-viewer/static/js/runtime-main.909e72ea.js.map",
     "static/js/2.b8a8af85.chunk.js": "/black-hole-viewer/static/js/2.b8a8af85.chunk.js",
     "static/js/2.b8a8af85.chunk.js.map": "/black-hole-viewer/static/js/2.b8a8af85.chunk.js.map",
     "index.html": "/black-hole-viewer/index.html",
-    "precache-manifest.c2eec2e128427f7464b7dc04e956eb3f.js": "/black-hole-viewer/precache-manifest.c2eec2e128427f7464b7dc04e956eb3f.js",
+    "precache-manifest.ee977ee65ff005381f5063968229cb18.js": "/black-hole-viewer/precache-manifest.ee977ee65ff005381f5063968229cb18.js",
     "service-worker.js": "/black-hole-viewer/service-worker.js",
     "static/css/main.c59f56bd.chunk.css.map": "/black-hole-viewer/static/css/main.c59f56bd.chunk.css.map",
     "static/js/2.b8a8af85.chunk.js.LICENSE": "/black-hole-viewer/static/js/2.b8a8af85.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.909e72ea.js",
     "static/js/2.b8a8af85.chunk.js",
     "static/css/main.c59f56bd.chunk.css",
-    "static/js/main.cda3c918.chunk.js"
+    "static/js/main.b5288186.chunk.js"
   ]
 }
