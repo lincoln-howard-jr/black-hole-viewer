@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/black-hole-viewer/precache-manifest.ee977ee65ff005381f5063968229cb18.js"
+  "/black-hole-viewer/precache-manifest.ad38bde90b1cabb1155da57c5fa14aba.js"
 );
 
 self.addEventListener('message', (event) => {
