@@ -132,7 +132,7 @@ export default function PersistentDrawerLeft() {
     }
     file += selection[3] + "_" + selection[1] + "per.con"
     // Set configuration file to state
-    return ("data/" + file)
+    return ("http://jwst-black-hole-viewer-dataset.s3-website-us-east-1.amazonaws.com/data/" + file)
   }
 
   const getData = file => {
@@ -195,7 +195,7 @@ export default function PersistentDrawerLeft() {
   }
 
   useEffect(() => {
-    Papa.parse("combinedFile.csv", {
+    Papa.parse("http://jwst-black-hole-viewer-dataset.s3-website-us-east-1.amazonaws.com/combinedFile.csv", {
       download: true,
       complete: (results) => {
           setComFile(results)
@@ -277,7 +277,7 @@ export default function PersistentDrawerLeft() {
           <WelcomePage toggleInput={toggleInput}/>
         }
         { !!data.length &&
-          <Graph data={data} />
+          <Graph data={data} toggleInput={toggleInput} />
         }
         {
           !!selection.length &&
@@ -294,7 +294,7 @@ export default function PersistentDrawerLeft() {
             
             { downloadsOpen &&
               <>
-                <a href="combinedFile.csv" download>Combined File</a>
+                <a href="http://jwst-black-hole-viewer-dataset.s3-website-us-east-1.amazonaws.com/combinedFile.csv" download>Combined File</a>
                 <br />
                 <a href={graphFile} download>Continuum File</a>
               </>

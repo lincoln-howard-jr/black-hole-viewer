@@ -108,9 +108,6 @@ export default function TemporaryDrawer(props) {
 
   return (
     <div>
-      <IconButton onClick={toggleDrawer(true)} edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
-        <SettingsIcon />
-      </IconButton>
       <Drawer anchor="right" open={props.inputOpen} onClose={toggleDrawer(false)}>
         {sideList('open')}
       </Drawer>
