@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/black-hole-viewer/static/css/main.c59f56bd.chunk.css",
-    "main.js": "/black-hole-viewer/static/js/main.d5b08321.chunk.js",
-    "main.js.map": "/black-hole-viewer/static/js/main.d5b08321.chunk.js.map",
+    "main.js": "/black-hole-viewer/static/js/main.34203159.chunk.js",
+    "main.js.map": "/black-hole-viewer/static/js/main.34203159.chunk.js.map",
     "runtime-main.js": "/black-hole-viewer/static/js/runtime-main.909e72ea.js",
     "runtime-main.js.map": "/black-hole-viewer/static/js/runtime-main.909e72ea.js.map",
-    "static/js/2.a3c12f5e.chunk.js": "/black-hole-viewer/static/js/2.a3c12f5e.chunk.js",
-    "static/js/2.a3c12f5e.chunk.js.map": "/black-hole-viewer/static/js/2.a3c12f5e.chunk.js.map",
+    "static/js/2.f4c3a010.chunk.js": "/black-hole-viewer/static/js/2.f4c3a010.chunk.js",
+    "static/js/2.f4c3a010.chunk.js.map": "/black-hole-viewer/static/js/2.f4c3a010.chunk.js.map",
     "index.html": "/black-hole-viewer/index.html",
-    "precache-manifest.ad38bde90b1cabb1155da57c5fa14aba.js": "/black-hole-viewer/precache-manifest.ad38bde90b1cabb1155da57c5fa14aba.js",
+    "precache-manifest.a02622120dc186c40197e2f11deb294c.js": "/black-hole-viewer/precache-manifest.a02622120dc186c40197e2f11deb294c.js",
     "service-worker.js": "/black-hole-viewer/service-worker.js",
     "static/css/main.c59f56bd.chunk.css.map": "/black-hole-viewer/static/css/main.c59f56bd.chunk.css.map",
-    "static/js/2.a3c12f5e.chunk.js.LICENSE": "/black-hole-viewer/static/js/2.a3c12f5e.chunk.js.LICENSE"
+    "static/js/2.f4c3a010.chunk.js.LICENSE": "/black-hole-viewer/static/js/2.f4c3a010.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.909e72ea.js",
-    "static/js/2.a3c12f5e.chunk.js",
+    "static/js/2.f4c3a010.chunk.js",
     "static/css/main.c59f56bd.chunk.css",
-    "static/js/main.d5b08321.chunk.js"
+    "static/js/main.34203159.chunk.js"
   ]
 }
