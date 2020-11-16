@@ -127,11 +127,14 @@ export default function PersistentDrawerLeft() {
     let file = "grid" + "0".repeat(zeros) + selection[0]
     if(selection[2] === "1") {
       file += "_Z_1_n_"
+      console.log("z = 1")
     } else {
+      console.log("z = 0.1")
       file += "_Z_0p1_n_"
     }
     file += selection[3] + "_" + selection[1] + "per.con"
-    console.log(file)
+    console.log("file is")
+    console.log(String(file))
     // Set configuration file to state
     return ("http://jwst-black-hole-viewer-dataset.s3-website-us-east-1.amazonaws.com/data/" + file)
   }
