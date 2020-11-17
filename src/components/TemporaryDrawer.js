@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -89,7 +90,7 @@ export default function TemporaryDrawer(props) {
             onChange={handleChange}
           >
           {input.values.map((value, index) => {
-            return <MenuItem key={index} value={value}>{value}</MenuItem>
+            return <MenuItem key={`input[${input.name}-${index}`} value={value}>{value}</MenuItem>
           })}
       </Select>
       </FormControl>

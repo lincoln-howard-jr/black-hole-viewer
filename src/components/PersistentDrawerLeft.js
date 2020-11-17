@@ -102,6 +102,7 @@ export default function PersistentDrawerLeft() {
   const [topTenLinesOpen, setTopTenLinesOpen] = useState (false);
 
   const updateApp = (inputState) => {
+    console.log (inputState);
     let selection = comFile.data.filter((item) => {
       return parseFloat(item[1]) === parseFloat(inputState.agn) && parseFloat(item[2]) === parseFloat(inputState.z) && parseFloat(item[3]) === parseFloat(inputState.n) && parseFloat(item[5]) === parseFloat(inputState.nh)
     })
@@ -114,6 +115,7 @@ export default function PersistentDrawerLeft() {
       let topTen = selection[0].splice (20).map ((item, i) => {return {name: columns [i + 13], value: parseFloat (item).toExponential ()}}).sort ((a, b) => b.value - a.value).splice (0, 10);
       // update graph and top 50 brightest lines
       let file = fileName(selection[0])
+      console.log(String(file))
       setSelection(topTen)
       setGraphFile(file)
       getData(file)
@@ -121,20 +123,23 @@ export default function PersistentDrawerLeft() {
   }
 
   const fileName = (selection) => {
+    console.log (selection);
     // Create file name from selection
     let zeros = 9 - selection[0].length
     // debugger
     let file = "grid" + "0".repeat(zeros) + selection[0]
-    if(selection[2] === "1.0") {
+    if(selection[2] === '1.0') {
       file += "_Z_1_n_"
+      console.log("z = 1")
     } else {
+      console.log("z = 0.1")
       file += "_Z_0p1_n_"
     }
     file += selection[3] + "_" + selection[1] + "per.con"
     console.log("file is")
     console.log(String(file))
     // Set configuration file to state
-    return ("http://jwst-black-hole-viewer-dataset.s3-website-us-east-1.amazonaws.com/data/" + file)
+    return ("https://d3s8jpaf4v3ros.cloudfront.net/data/" + file)
   }
 
   const getData = file => {
@@ -197,7 +202,7 @@ export default function PersistentDrawerLeft() {
   }
 
   useEffect(() => {
-    Papa.parse("http://jwst-black-hole-viewer-dataset.s3-website-us-east-1.amazonaws.com/combinedFile.csv", {
+    Papa.parse("https://d3s8jpaf4v3ros.cloudfront.net/combinedFile.csv", {
       download: true,
       complete: (results) => {
           setComFile(results)
@@ -296,7 +301,7 @@ export default function PersistentDrawerLeft() {
             
             { downloadsOpen &&
               <>
-                <a href="http://jwst-black-hole-viewer-dataset.s3-website-us-east-1.amazonaws.com/combinedFile.csv" download>Combined File</a>
+                <a href="https://d3s8jpaf4v3ros.cloudfront.net/combinedFile.csv" download>Combined File</a>
                 <br />
                 <a href={graphFile} download>Continuum File</a>
               </>
