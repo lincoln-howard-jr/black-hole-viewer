@@ -114,7 +114,6 @@ export default function PersistentDrawerLeft() {
       let topTen = selection[0].splice (20).map ((item, i) => {return {name: columns [i + 13], value: parseFloat (item).toExponential ()}}).sort ((a, b) => b.value - a.value).splice (0, 10);
       // update graph and top 50 brightest lines
       let file = fileName(selection[0])
-      console.log(String(file))
       setSelection(topTen)
       setGraphFile(file)
       getData(file)
@@ -126,11 +125,9 @@ export default function PersistentDrawerLeft() {
     let zeros = 9 - selection[0].length
     // debugger
     let file = "grid" + "0".repeat(zeros) + selection[0]
-    if(selection[2] === "1") {
+    if(selection[2] === "1.0") {
       file += "_Z_1_n_"
-      console.log("z = 1")
     } else {
-      console.log("z = 0.1")
       file += "_Z_0p1_n_"
     }
     file += selection[3] + "_" + selection[1] + "per.con"
